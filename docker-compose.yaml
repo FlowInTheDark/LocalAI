@@ -12,6 +12,8 @@ services:
       args:
       - IMAGE_TYPE=core
       - BASE_IMAGE=ubuntu:24.04
+    ports:
+      - 8080:8080
     env_file:
       - .env
     environment:
